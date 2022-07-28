@@ -1,0 +1,12 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Nunito:wght@400;700;900&family=Rubik:wght@400;500;700&family=Vollkorn:wght@400;500&display=swap");
+/*Минимальное обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+/*Цвета*//*# sourceMappingURL=index.css.map */
