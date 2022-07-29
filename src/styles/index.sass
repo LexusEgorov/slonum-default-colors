@@ -11,7 +11,7 @@
 
 html,
 body
-  overflow: hidden
+  overflow-x: hidden
   background: #f5f5f5
 
 /*Цвета*/
@@ -22,15 +22,14 @@ $orange-color: #ff652f
 $red-color: #e02d05
 $violet-color-dark: #6539c1
 $violet-color-light: #5d77ff
-$violet-color-gradient: linear-gradient(326.12deg, $violet-color-light 17.95%, $violet-color-dark 89.78%)
-$orange-color-gradient: linear-gradient(326.12deg, $orange-color 17.95%, $red-color 89.78%)
 $main-text-color: #1f1d2a
-$additional-text-color: #4f5569
-$light-text-color: #9fa0a7
-$green-text-color: $green-color
-$white-button-color: $light-color
-$orange-button-color: $orange-color
-$orange-timer-color: $orange-color
+$additional-text-color-1: #4f5569
+$additional-text-color-2: #9fa0a7
+$accent-color-1: $green-color
+$accent-color-2: $orange-color
+$accent-color-3-dark: $violet-color-dark
+$accent-color-3-light: $violet-color-light
+$violet-color-gradient: linear-gradient(326.12deg, $accent-color-3-light 17.95%, $accent-color-3-dark 89.78%)
 
 /*Стили для текста*/
 
@@ -47,7 +46,7 @@ h2
   font: normal 400 15px/25px 'Rubik', sans-serif
   letter-spacing: 0.08em
   text-transform: uppercase
-  color: $light-text-color
+  color: $additional-text-color-2
 
 .paragraph
   font: normal 400 22px/33px 'Rubik', sans-serif
@@ -57,22 +56,17 @@ h2
 .secondary-paragraph
   font: normal 400 18px/27px 'Rubik', sans-serif
   letter-spacing: 0.05em
-  color: $additional-text-color
+  color: $additional-text-color-1
 
 .navigate-text
   font: normal 700 20px/27px 'Nunito', sans-serif
   letter-spacing: 0.03em
   color: $main-text-color
 
-.info-text
-  font: normal 400 22px/33px 'Rubik', sans-serif
-  letter-spacing: 0.05em
-  color: $main-text-color
-
 .timer-text-count
   font: normal 700 32px/38px 'Nunito', sans-serif
   letter-spacing: 0.04em
-  color: $orange-timer-color
+  color: $accent-color-2
 
 .timer-text
   font: normal 400 16px/22px 'Nunito', sans-serif
@@ -90,6 +84,24 @@ h2
   font: normal 700 20px/24px 'Rubik', sans-serif
   letter-spacing: 0.04em
   color: $light-color
+
+/*Поинт*/  
+
+.point
+  width: 445px
+  padding: 20px 35px
+  padding-bottom: 24px
+  background: $light-color
+  border-radius: 16px
+  text-align: left
+
+  img
+    margin-bottom: 8px
+
+  p
+    font: normal 400 20px/24px 'Rubik', sans-serif
+    letter-spacing: 0.04em
+    color: $additional-text-color-1
 
 /*Контейнеры*/
 
@@ -128,7 +140,7 @@ h2
         color: $orange-color
   
   .sign-in
-    background: $white-button-color
+    background: $light-color
     color: $main-text-color
     padding: 10px 58.5px
     font-weight: 400
@@ -204,7 +216,7 @@ h2
       margin-bottom: 4px
     
     &__where
-      color: $light-text-color
+      color: $additional-text-color-2
 
 /*Контейнер с анимацией*/
 
@@ -363,6 +375,45 @@ h2
 
 .fade-in
   animation: fadeIn ease 2s
+
+/*О конкурсе*/  
+
+.about
+  text-align: center
+  display: flex
+  flex-direction: column
+  align-items: center
+  padding-top: 200px
+  clear: both
+  width: 100%
+
+  &__us
+    margin-bottom: 200px
+
+    .company
+      font-weight: 700
+  
+    .accent
+      color: $accent-color-1
+      font-weight: 700
+
+  .for-what
+    h2
+      margin-bottom: 60px
+      
+    .points
+      min-height: 370px
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      align-content: space-between
+
+      &__item .vk-link
+        text-decoration: underline
+        color: $accent-color-2
+      
+      &__item .vk-link::visited
+        color: $accent-color-2
 
 /*Анимации*/ 
 

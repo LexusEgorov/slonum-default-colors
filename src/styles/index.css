@@ -11,7 +11,7 @@
 
 html,
 body {
-  overflow: hidden;
+  overflow-x: hidden;
   background: #f5f5f5;
 }
 
@@ -53,12 +53,6 @@ h2 {
   color: #1f1d2a;
 }
 
-.info-text {
-  font: normal 400 22px/33px "Rubik", sans-serif;
-  letter-spacing: 0.05em;
-  color: #1f1d2a;
-}
-
 .timer-text-count {
   font: normal 700 32px/38px "Nunito", sans-serif;
   letter-spacing: 0.04em;
@@ -81,6 +75,24 @@ h2 {
   font: normal 700 20px/24px "Rubik", sans-serif;
   letter-spacing: 0.04em;
   color: #ffffff;
+}
+
+/*Поинт*/  
+.point {
+  width: 445px;
+  padding: 20px 35px;
+  padding-bottom: 24px;
+  background: #ffffff;
+  border-radius: 16px;
+  text-align: left;
+}
+.point img {
+  margin-bottom: 8px;
+}
+.point p {
+  font: normal 400 20px/24px "Rubik", sans-serif;
+  letter-spacing: 0.04em;
+  color: #4f5569;
 }
 
 /*Контейнеры*/
@@ -393,6 +405,44 @@ h2 {
 .fade-in {
   -webkit-animation: fadeIn ease 2s;
           animation: fadeIn ease 2s;
+}
+
+/*О конкурсе*/  
+.about {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 200px;
+  clear: both;
+  width: 100%;
+}
+.about__us {
+  margin-bottom: 200px;
+}
+.about__us .company {
+  font-weight: 700;
+}
+.about__us .accent {
+  color: #14a76c;
+  font-weight: 700;
+}
+.about .for-what h2 {
+  margin-bottom: 60px;
+}
+.about .for-what .points {
+  min-height: 370px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.about .for-what .points__item .vk-link {
+  text-decoration: underline;
+  color: #ff652f;
+}
+.about .for-what .points__item .vk-link::visited {
+  color: #ff652f;
 }
 
 /*Анимации*/ 
