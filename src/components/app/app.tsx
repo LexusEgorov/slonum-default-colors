@@ -1,4 +1,4 @@
-import Space from '../header-block/components/space/space';
+import Space from '../space/space';
 import './styles/app.css';
 
 function App() : JSX.Element {
