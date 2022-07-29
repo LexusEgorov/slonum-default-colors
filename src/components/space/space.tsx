@@ -1,8 +1,8 @@
 function Space() : JSX.Element {
   return (
-    <div className="header-animate-container">
+    <div className="promo-animate-container">
       <div className="space fade-in">
-        <img src="images/space.svg" alt="" width={864} height={693}/>
+        <img src="images/space1.svg" alt="" width={864} height={693}/>
         <img src="images/space-elements/atom.svg" className='atom space__element' alt="" width={50} height={50}/>
         <img src="images/space-elements/elephant.svg" className='elephant space__element' alt="" width={115} height={90}/>
         <img src="images/space-elements/lamp.svg" className='lamp space__element' alt="" width={110} height={110}/>

@@ -9,6 +9,12 @@
   text-decoration: none;
 }
 
+html,
+body {
+  overflow: hidden;
+  background: #f5f5f5;
+}
+
 /*Цвета*/
 /*Стили для текста*/
 h1 {
@@ -22,13 +28,20 @@ h2 {
   color: #1f1d2a;
 }
 
+.signature {
+  font: normal 400 15px/25px "Rubik", sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #9fa0a7;
+}
+
 .paragraph {
   font: normal 400 22px/33px "Rubik", sans-serif;
   letter-spacing: 0.05em;
   color: #1f1d2a;
 }
 
-.input-text {
+.secondary-paragraph {
   font: normal 400 18px/27px "Rubik", sans-serif;
   letter-spacing: 0.05em;
   color: #4f5569;
@@ -43,6 +56,18 @@ h2 {
 .info-text {
   font: normal 400 22px/33px "Rubik", sans-serif;
   letter-spacing: 0.05em;
+  color: #1f1d2a;
+}
+
+.timer-text-count {
+  font: normal 700 32px/38px "Nunito", sans-serif;
+  letter-spacing: 0.04em;
+  color: #ff652f;
+}
+
+.timer-text {
+  font: normal 400 16px/22px "Nunito", sans-serif;
+  letter-spacing: 0.04em;
   color: #1f1d2a;
 }
 
@@ -77,10 +102,12 @@ h2 {
 /*Шапка*/
 .page-header {
   width: 1400px;
+  margin: 0 auto;
   position: absolute;
   top: 30px;
   display: flex;
   justify-content: space-between;
+  z-index: 1000;
 }
 .page-header .logo {
   display: flex;
@@ -97,21 +124,109 @@ h2 {
   background: #ffffff;
   color: #1f1d2a;
   padding: 10px 58.5px;
+  font-weight: 400;
+  -webkit-animation: loadPageAnimate 2.5s ease;
+          animation: loadPageAnimate 2.5s ease;
+}
+
+@-webkit-keyframes loadPageAnimate {
+  0% {
+    background: #ff652f;
+  }
+  25% {
+    background: #ff652f;
+  }
+  100% {
+    background: #ffffff;
+  }
+}
+
+@keyframes loadPageAnimate {
+  0% {
+    background: #ff652f;
+  }
+  25% {
+    background: #ff652f;
+  }
+  100% {
+    background: #ffffff;
+  }
+}
+/*Промо блок*/
+.promo-block {
+  float: right;
+  display: flex;
+  align-items: flex-end;
+}
+.promo-block .info-column {
+  margin-right: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.promo-block .info-column .signature {
+  order: -1;
+}
+.promo-block .info-column h1 {
+  margin-bottom: 40px;
+}
+.promo-block .info-column .secondary-paragraph {
+  margin-bottom: 60px;
+}
+.promo-block .info-column .time-to-go {
+  margin-bottom: 60px;
+  display: flex;
+  align-items: flex-start;
+}
+.promo-block .info-column .time-to-go .get-in {
+  padding: 18px 74.5px;
+  margin-right: 60px;
+}
+
+/*Таймер*/
+.timer {
+  display: flex;
+  align-items: flex-start;
+}
+.timer .colon {
+  font: normal 900 24px/33px "Nunito", sans-serif;
+  margin-right: 10px;
+  margin-top: 13px;
+  -webkit-animation: colonAnimate 1.5s ease infinite;
+          animation: colonAnimate 1.5s ease infinite;
+}
+.timer .time {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.timer .time:not(:last-child) {
+  margin-right: 10px;
+}
+.timer .time__count {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 11px;
+  width: 70px;
+  margin-bottom: 4px;
+}
+.timer .time__where {
+  color: #9fa0a7;
 }
 
 /*Контейнер с анимацией*/
-.header-animate-container {
+.promo-animate-container {
   position: relative;
   width: 864px;
   height: 810px;
 }
-.header-animate-container .space {
+.promo-animate-container .space {
   position: relative;
   width: 100%;
   height: 693px;
   background: linear-gradient(326.12deg, #5d77ff 17.95%, #6539c1 89.78%);
 }
-.header-animate-container .space__element {
+.promo-animate-container .space__element {
   position: absolute;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
@@ -122,7 +237,7 @@ h2 {
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
-.header-animate-container .space .atom {
+.promo-animate-container .space .atom {
   top: 132px;
   left: 75px;
   scale: 0;
@@ -131,35 +246,35 @@ h2 {
   -webkit-animation-name: atomAnimate;
           animation-name: atomAnimate;
 }
-.header-animate-container .space .elephant {
+.promo-animate-container .space .elephant {
   top: 235px;
   left: 585px;
   rotate: -11deg;
   -webkit-animation-name: elephantAnimate;
           animation-name: elephantAnimate;
 }
-.header-animate-container .space .lamp {
+.promo-animate-container .space .lamp {
   top: 340px;
   left: 476px;
   rotate: 15deg;
   -webkit-animation-name: lampAnimate;
           animation-name: lampAnimate;
 }
-.header-animate-container .space .clock {
+.promo-animate-container .space .clock {
   top: 220px;
   left: 118px;
   scale: 0.7;
   -webkit-animation-name: clockAnimate;
           animation-name: clockAnimate;
 }
-.header-animate-container .space .plane {
+.promo-animate-container .space .plane {
   top: 329px;
   left: 718px;
   scale: 0.5;
   -webkit-animation-name: planeAnimate;
           animation-name: planeAnimate;
 }
-.header-animate-container .space .rocket {
+.promo-animate-container .space .rocket {
   top: 353px;
   left: 88px;
   -webkit-animation-timing-function: ease-out;
@@ -167,25 +282,25 @@ h2 {
   -webkit-animation-name: rocketAnimate;
           animation-name: rocketAnimate;
 }
-.header-animate-container .space .big-planet {
+.promo-animate-container .space .big-planet {
   top: 82px;
   left: 209px;
   -webkit-animation-name: bigPlanetAnimate;
           animation-name: bigPlanetAnimate;
 }
-.header-animate-container .space .striped-planet {
+.promo-animate-container .space .striped-planet {
   top: 134px;
   left: 427px;
   -webkit-animation-name: stripedPlanetAnimate;
           animation-name: stripedPlanetAnimate;
 }
-.header-animate-container .space .dark-planet {
+.promo-animate-container .space .dark-planet {
   top: 460px;
   left: 317px;
   -webkit-animation-name: darkPlanetAnimate;
           animation-name: darkPlanetAnimate;
 }
-.header-animate-container .space .division {
+.promo-animate-container .space .division {
   top: 185px;
   left: 515px;
   opacity: 0;
@@ -194,7 +309,7 @@ h2 {
   -webkit-animation-name: divisionAnimate;
           animation-name: divisionAnimate;
 }
-.header-animate-container .space .plus {
+.promo-animate-container .space .plus {
   top: 241px;
   left: 432px;
   opacity: 0;
@@ -203,65 +318,65 @@ h2 {
   -webkit-animation-name: plusAnimate;
           animation-name: plusAnimate;
 }
-.header-animate-container .space .baloon {
+.promo-animate-container .space .baloon {
   top: 296px;
   left: 354px;
   -webkit-animation-name: baloonAnimate;
           animation-name: baloonAnimate;
 }
-.header-animate-container .space .pallette {
+.promo-animate-container .space .pallette {
   top: 119px;
   left: 721px;
   -webkit-animation-name: palletteAnimate;
           animation-name: palletteAnimate;
 }
-.header-animate-container .space .star-1 {
+.promo-animate-container .space .star-1 {
   top: 14px;
   left: 118px;
 }
-.header-animate-container .space .star-2 {
+.promo-animate-container .space .star-2 {
   top: 144px;
   left: 805px;
 }
-.header-animate-container .space .star-3 {
+.promo-animate-container .space .star-3 {
   top: 201px;
   left: 717px;
 }
-.header-animate-container .space .star-4 {
+.promo-animate-container .space .star-4 {
   top: 515px;
   left: 388px;
 }
-.header-animate-container .space .star-5 {
+.promo-animate-container .space .star-5 {
   top: 455px;
   left: 305px;
 }
-.header-animate-container .space .star-6 {
+.promo-animate-container .space .star-6 {
   top: 513px;
   left: 302px;
 }
-.header-animate-container .space .star-7 {
+.promo-animate-container .space .star-7 {
   top: 106px;
   left: 638px;
 }
-.header-animate-container .space .star-8 {
+.promo-animate-container .space .star-8 {
   top: 33px;
   left: 755px;
 }
-.header-animate-container .space .star-9 {
+.promo-animate-container .space .star-9 {
   top: 185px;
   left: 285px;
 }
-.header-animate-container .space .star-10 {
+.promo-animate-container .space .star-10 {
   top: 82px;
   left: 370px;
 }
-.header-animate-container .child {
+.promo-animate-container .child {
   position: absolute;
   left: 369px;
   top: 473px;
   z-index: 2;
 }
-.header-animate-container .pencil {
+.promo-animate-container .pencil {
   position: absolute;
   z-index: 1;
   top: 629px;
@@ -269,24 +384,47 @@ h2 {
   -webkit-animation: pencilAnimate 2.5s cubic-bezier(0.17, 0.88, 0.56, 1.43) infinite;
           animation: pencilAnimate 2.5s cubic-bezier(0.17, 0.88, 0.56, 1.43) infinite;
 }
-.header-animate-container .planes {
+.promo-animate-container .planes {
   position: absolute;
   top: 716px;
   left: 170px;
 }
 
 .fade-in {
-  -webkit-animation: fadeIn ease 2.5s;
-          animation: fadeIn ease 2.5s;
+  -webkit-animation: fadeIn ease 2s;
+          animation: fadeIn ease 2s;
 }
 
+/*Анимации*/ 
+@-webkit-keyframes colonAnimate {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+} 
+@keyframes colonAnimate {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @-webkit-keyframes pencilAnimate {
   0% {
     rotate: 24deg;
   }
   33% {
     rotate: 66deg;
-    transform: translateX(15px);
+    transform: translateX(25px);
   }
   66% {
     rotate: 72deg;
@@ -296,14 +434,13 @@ h2 {
     rotate: 24deg;
   }
 }
-
 @keyframes pencilAnimate {
   0% {
     rotate: 24deg;
   }
   33% {
     rotate: 66deg;
-    transform: translateX(15px);
+    transform: translateX(25px);
   }
   66% {
     rotate: 72deg;
@@ -494,7 +631,7 @@ h2 {
     transform: translateY(0);
   }
   66% {
-    transform: translateY(-70px);
+    transform: translateY(-60px);
   }
   100% {
     transform: translateY(0);
@@ -505,7 +642,7 @@ h2 {
     transform: translateY(0);
   }
   66% {
-    transform: translateY(-70px);
+    transform: translateY(-60px);
   }
   100% {
     transform: translateY(0);

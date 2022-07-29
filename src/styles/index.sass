@@ -9,6 +9,11 @@
   list-style: none
   text-decoration: none
 
+html,
+body
+  overflow: hidden
+  background: #f5f5f5
+
 /*Цвета*/
 
 $light-color: #ffffff
@@ -21,6 +26,11 @@ $violet-color-gradient: linear-gradient(326.12deg, $violet-color-light 17.95%, $
 $orange-color-gradient: linear-gradient(326.12deg, $orange-color 17.95%, $red-color 89.78%)
 $main-text-color: #1f1d2a
 $additional-text-color: #4f5569
+$light-text-color: #9fa0a7
+$green-text-color: $green-color
+$white-button-color: $light-color
+$orange-button-color: $orange-color
+$orange-timer-color: $orange-color
 
 /*Стили для текста*/
 
@@ -33,12 +43,18 @@ h2
   letter-spacing: 0.04em
   color: $main-text-color
 
+.signature
+  font: normal 400 15px/25px 'Rubik', sans-serif
+  letter-spacing: 0.08em
+  text-transform: uppercase
+  color: $light-text-color
+
 .paragraph
   font: normal 400 22px/33px 'Rubik', sans-serif
   letter-spacing: 0.05em
   color: $main-text-color
 
-.input-text
+.secondary-paragraph
   font: normal 400 18px/27px 'Rubik', sans-serif
   letter-spacing: 0.05em
   color: $additional-text-color
@@ -51,6 +67,16 @@ h2
 .info-text
   font: normal 400 22px/33px 'Rubik', sans-serif
   letter-spacing: 0.05em
+  color: $main-text-color
+
+.timer-text-count
+  font: normal 700 32px/38px 'Nunito', sans-serif
+  letter-spacing: 0.04em
+  color: $orange-timer-color
+
+.timer-text
+  font: normal 400 16px/22px 'Nunito', sans-serif
+  letter-spacing: 0.04em
   color: $main-text-color
 
 /*Кнопки*/
@@ -83,10 +109,12 @@ h2
 
 .page-header
   width: 1400px
+  margin: 0 auto
   position: absolute
   top: 30px
   display: flex
   justify-content: space-between
+  z-index: 1000
 
   .logo
     display: flex
@@ -100,14 +128,87 @@ h2
         color: $orange-color
   
   .sign-in
-    background: $light-color
+    background: $white-button-color
     color: $main-text-color
     padding: 10px 58.5px
+    font-weight: 400
+    animation: loadPageAnimate 2.5s ease 
+
+@keyframes loadPageAnimate
+  0%
+    background: $orange-color
+
+  25%
+    background: $orange-color
+
+  100%
+    background: $light-color
+    
         
+/*Промо блок*/
+
+.promo-block
+  float: right
+  display: flex
+  align-items: flex-end
+
+  .info-column
+    margin-right: 140px
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+
+    .signature
+      order: -1
+
+    h1
+      margin-bottom: 40px
+    
+    .secondary-paragraph
+      margin-bottom: 60px
+    
+    .time-to-go
+      margin-bottom: 60px
+      display: flex
+      align-items: flex-start
+
+      .get-in
+        padding: 18px 74.5px
+        margin-right: 60px
+  
+/*Таймер*/
+
+.timer
+  display: flex
+  align-items: flex-start
+
+  .colon
+    font: normal 900 24px/33px 'Nunito', sans-serif
+    margin-right: 10px
+    margin-top: 13px
+    animation: colonAnimate 1.5s ease infinite
+
+  .time
+    display: flex
+    flex-direction: column
+    text-align: center
+    
+    &:not(:last-child)
+      margin-right: 10px
+
+    &__count
+      background: $light-color
+      border-radius: 16px 
+      padding: 11px
+      width: 70px
+      margin-bottom: 4px
+    
+    &__where
+      color: $light-text-color
 
 /*Контейнер с анимацией*/
 
-.header-animate-container
+.promo-animate-container
   position: relative
   width: 864px
   height: 810px
@@ -261,15 +362,27 @@ h2
     left: 170px
 
 .fade-in
-  animation: fadeIn ease 2.5s
+  animation: fadeIn ease 2s
+
+/*Анимации*/ 
+
+@keyframes colonAnimate
+  0%
+    opacity: 0
+
+  33%
+    opacity: 1
+  
+  100%
+    opacity: 1
 
 @keyframes pencilAnimate
   0%
     rotate: 24deg
-  
+
   33%
     rotate: 66deg
-    transform: translateX(15px)
+    transform: translateX(25px)
 
   66%
     rotate: 72deg
@@ -365,7 +478,7 @@ h2
     transform: translateY(0)
 
   66%
-    transform: translateY(-70px)
+    transform: translateY(-60px)
 
   100%
     transform: translateY(0)

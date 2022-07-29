@@ -1,13 +1,11 @@
 import PageHeader from "../page-header/page-header";
+import PromoBlock from "../promo-block/promo-block";
 
 function App() : JSX.Element {
   return (
     <div className="extra-wide-container">
-      <div className="wide-container">
-        <div className="small-container">
-          <PageHeader />
-        </div>
-      </div>
+      <PageHeader />
+      <PromoBlock />
     </div>
   )
 }
