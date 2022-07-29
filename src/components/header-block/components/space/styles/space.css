@@ -1,0 +1,512 @@
+.container {
+  position: relative;
+  width: 864px;
+  height: 810px;
+}
+.container .space {
+  position: relative;
+  width: 100%;
+  height: 693px;
+  background: linear-gradient(326.12deg, #5D77FF 17.95%, #6539C1 89.78%);
+}
+.container .space__element {
+  position: absolute;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+.container .space .atom {
+  top: 132px;
+  left: 75px;
+  scale: 0;
+  -webkit-animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+          animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+  -webkit-animation-name: atomAnimate;
+          animation-name: atomAnimate;
+}
+.container .space .elephant {
+  top: 235px;
+  left: 585px;
+  rotate: -11deg;
+  -webkit-animation-name: elephantAnimate;
+          animation-name: elephantAnimate;
+}
+.container .space .lamp {
+  top: 340px;
+  left: 476px;
+  rotate: 15deg;
+  -webkit-animation-name: lampAnimate;
+          animation-name: lampAnimate;
+}
+.container .space .clock {
+  top: 220px;
+  left: 118px;
+  scale: 0.7;
+  -webkit-animation-name: clockAnimate;
+          animation-name: clockAnimate;
+}
+.container .space .plane {
+  top: 329px;
+  left: 718px;
+  scale: 0.5;
+  -webkit-animation-name: planeAnimate;
+          animation-name: planeAnimate;
+}
+.container .space .rocket {
+  top: 353px;
+  left: 88px;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-name: rocketAnimate;
+          animation-name: rocketAnimate;
+}
+.container .space .big-planet {
+  top: 82px;
+  left: 209px;
+  -webkit-animation-name: bigPlanetAnimate;
+          animation-name: bigPlanetAnimate;
+}
+.container .space .striped-planet {
+  top: 134px;
+  left: 427px;
+  -webkit-animation-name: stripedPlanetAnimate;
+          animation-name: stripedPlanetAnimate;
+}
+.container .space .dark-planet {
+  top: 460px;
+  left: 317px;
+  -webkit-animation-name: darkPlanetAnimate;
+          animation-name: darkPlanetAnimate;
+}
+.container .space .division {
+  top: 185px;
+  left: 515px;
+  opacity: 0;
+  -webkit-animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+          animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+  -webkit-animation-name: divisionAnimate;
+          animation-name: divisionAnimate;
+}
+.container .space .plus {
+  top: 241px;
+  left: 432px;
+  opacity: 0;
+  -webkit-animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+          animation-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+  -webkit-animation-name: plusAnimate;
+          animation-name: plusAnimate;
+}
+.container .space .baloon {
+  top: 296px;
+  left: 354px;
+  -webkit-animation-name: baloonAnimate;
+          animation-name: baloonAnimate;
+}
+.container .space .pallette {
+  top: 119px;
+  left: 721px;
+  -webkit-animation-name: palletteAnimate;
+          animation-name: palletteAnimate;
+}
+.container .child {
+  position: absolute;
+  left: 369px;
+  top: 473px;
+  z-index: 2;
+}
+.container .pencil {
+  position: absolute;
+  z-index: 1;
+  top: 629px;
+  left: 413px;
+}
+
+.fade-in {
+  -webkit-animation: fadeIn ease 2s;
+          animation: fadeIn ease 2s;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes atomAnimate {
+  0% {
+    scale: 0;
+    rotate: 0deg;
+  }
+  50% {
+    scale: 1;
+    rotate: 45deg;
+  }
+  100% {
+    scale: 0;
+    rotate: 90deg;
+  }
+}
+@keyframes atomAnimate {
+  0% {
+    scale: 0;
+    rotate: 0deg;
+  }
+  50% {
+    scale: 1;
+    rotate: 45deg;
+  }
+  100% {
+    scale: 0;
+    rotate: 90deg;
+  }
+}
+@-webkit-keyframes elephantAnimate {
+  0% {
+    rotate: -11deg;
+  }
+  50% {
+    rotate: 30deg;
+    transform: translateX(10px);
+  }
+  100% {
+    rotate: -11deg;
+    transform: translateX(-10deg);
+  }
+}
+@keyframes elephantAnimate {
+  0% {
+    rotate: -11deg;
+  }
+  50% {
+    rotate: 30deg;
+    transform: translateX(10px);
+  }
+  100% {
+    rotate: -11deg;
+    transform: translateX(-10deg);
+  }
+}
+@-webkit-keyframes lampAnimate {
+  0% {
+    rotate: 15deg;
+  }
+  11% {
+    rotate: 15deg;
+  }
+  40% {
+    rotate: 55deg;
+  }
+  69% {
+    rotate: 10deg;
+  }
+  85% {
+    rotate: -10deg;
+  }
+  100% {
+    rotate: 15deg;
+  }
+}
+@keyframes lampAnimate {
+  0% {
+    rotate: 15deg;
+  }
+  11% {
+    rotate: 15deg;
+  }
+  40% {
+    rotate: 55deg;
+  }
+  69% {
+    rotate: 10deg;
+  }
+  85% {
+    rotate: -10deg;
+  }
+  100% {
+    rotate: 15deg;
+  }
+}
+@-webkit-keyframes clockAnimate {
+  0% {
+    rotate: 360deg;
+    scale: 0.7;
+  }
+  50% {
+    scale: 1;
+  }
+  60% {
+    scale: 1;
+  }
+  100% {
+    rotate: 0deg;
+    scale: 0.7;
+  }
+}
+@keyframes clockAnimate {
+  0% {
+    rotate: 360deg;
+    scale: 0.7;
+  }
+  50% {
+    scale: 1;
+  }
+  60% {
+    scale: 1;
+  }
+  100% {
+    rotate: 0deg;
+    scale: 0.7;
+  }
+}
+@-webkit-keyframes planeAnimate {
+  0% {
+    scale: 0.5;
+    rotate: 0deg;
+  }
+  50% {
+    scale: 1;
+    rotate: 45deg;
+  }
+  100% {
+    scale: 0.5;
+    rotate: 0deg;
+  }
+}
+@keyframes planeAnimate {
+  0% {
+    scale: 0.5;
+    rotate: 0deg;
+  }
+  50% {
+    scale: 1;
+    rotate: 45deg;
+  }
+  100% {
+    scale: 0.5;
+    rotate: 0deg;
+  }
+}
+@-webkit-keyframes rocketAnimate {
+  0% {
+    transform: translateY(0);
+  }
+  66% {
+    transform: translateY(-70px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes rocketAnimate {
+  0% {
+    transform: translateY(0);
+  }
+  66% {
+    transform: translateY(-70px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes bigPlanetAnimate {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(-50px) translateY(20px);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+@keyframes bigPlanetAnimate {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  50% {
+    transform: translateX(-50px) translateY(20px);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+@-webkit-keyframes stripedPlanetAnimate {
+  0% {
+    transform: translateX(0);
+  }
+  7% {
+    transform: translateX(0);
+  }
+  57% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes stripedPlanetAnimate {
+  0% {
+    transform: translateX(0);
+  }
+  7% {
+    transform: translateX(0);
+  }
+  57% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes darkPlanetAnimate {
+  0% {
+    rotate: 0deg;
+  }
+  50% {
+    rotate: -45deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
+@keyframes darkPlanetAnimate {
+  0% {
+    rotate: 0deg;
+  }
+  50% {
+    rotate: -45deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
+@-webkit-keyframes divisionAnimate {
+  0% {
+    opacity: 0;
+    scale: 1;
+  }
+  25% {
+    opacity: 1;
+    scale: 1.5;
+  }
+  50% {
+    scale: 1.7;
+    opacity: 0;
+  }
+}
+@keyframes divisionAnimate {
+  0% {
+    opacity: 0;
+    scale: 1;
+  }
+  25% {
+    opacity: 1;
+    scale: 1.5;
+  }
+  50% {
+    scale: 1.7;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes plusAnimate {
+  0% {
+    scale: 1;
+    opacity: 0;
+  }
+  50% {
+    scale: 1;
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+    scale: 1.5;
+  }
+  95% {
+    opacity: 0;
+    scale: 1.7;
+  }
+}
+@keyframes plusAnimate {
+  0% {
+    scale: 1;
+    opacity: 0;
+  }
+  50% {
+    scale: 1;
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+    scale: 1.5;
+  }
+  95% {
+    opacity: 0;
+    scale: 1.7;
+  }
+}
+@-webkit-keyframes baloonAnimate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(34px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes baloonAnimate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(34px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes palletteAnimate {
+  0% {
+    rotate: 0deg;
+  }
+  25% {
+    rotate: 0deg;
+  }
+  83% {
+    rotate: 360deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+@keyframes palletteAnimate {
+  0% {
+    rotate: 0deg;
+  }
+  25% {
+    rotate: 0deg;
+  }
+  83% {
+    rotate: 360deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}/*# sourceMappingURL=space.css.map */
