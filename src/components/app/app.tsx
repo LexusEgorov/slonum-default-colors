@@ -3,7 +3,9 @@ import './styles/app.css';
 
 function App() : JSX.Element {
   return (
-    <Space />
+    <>
+      <Space />
+    </>
   )
 }
 

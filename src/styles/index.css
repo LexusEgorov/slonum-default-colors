@@ -10,6 +10,55 @@
 }
 
 /*Цвета*/
+/*Стили для текста*/
+h1 {
+  font: normal 700 55px/67px "Nunito", sans-serif;
+  color: #1f1d2a;
+}
+
+h2 {
+  font: normal 700 32px/44px "Nunito", sans-serif;
+  letter-spacing: 0.04em;
+  color: #1f1d2a;
+}
+
+.paragraph {
+  font: normal 400 22px/33px "Rubik", sans-serif;
+  letter-spacing: 0.05em;
+  color: #1f1d2a;
+}
+
+.input-text {
+  font: normal 400 18px/27px "Rubik", sans-serif;
+  letter-spacing: 0.05em;
+  color: #4f5569;
+}
+
+.navigate-text {
+  font: normal 700 20px/27px "Nunito", sans-serif;
+  letter-spacing: 0.03em;
+  color: #1f1d2a;
+}
+
+.info-text {
+  font: normal 400 22px/33px "Rubik", sans-serif;
+  letter-spacing: 0.05em;
+  color: #1f1d2a;
+}
+
+/*Кнопки*/
+.btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 15px;
+  background: #14a76c;
+  padding: 18px 70px;
+  text-align: center;
+  font: normal 700 20px/24px "Rubik", sans-serif;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
 /*Контейнер с анимацией*/
 .header-animate-container {
   position: relative;
