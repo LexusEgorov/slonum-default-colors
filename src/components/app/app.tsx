@@ -1,11 +1,14 @@
-import Space from '../space/space';
-import './styles/app.css';
+import PageHeader from "../page-header/page-header";
 
 function App() : JSX.Element {
   return (
-    <>
-      <Space />
-    </>
+    <div className="extra-wide-container">
+      <div className="wide-container">
+        <div className="small-container">
+          <PageHeader />
+        </div>
+      </div>
+    </div>
   )
 }
 

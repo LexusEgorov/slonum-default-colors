@@ -52,11 +52,51 @@ h2 {
   border: none;
   border-radius: 15px;
   background: #14a76c;
-  padding: 18px 70px;
   text-align: center;
   font: normal 700 20px/24px "Rubik", sans-serif;
   letter-spacing: 0.04em;
   color: #ffffff;
+}
+
+/*Контейнеры*/
+.extra-wide-container {
+  width: 1920px;
+  margin: 0 auto;
+}
+
+.wide-container {
+  width: 1680px;
+  margin: 0 auto;
+}
+
+.small-container {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+/*Шапка*/
+.page-header {
+  width: 1400px;
+  position: absolute;
+  top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.page-header .logo {
+  display: flex;
+  align-items: center;
+}
+.page-header .logo__text {
+  font: normal 500 34px/40px "Rubik", sans-serif;
+  color: #1f1d2a;
+}
+.page-header .logo__text span {
+  color: #ff652f;
+}
+.page-header .sign-in {
+  background: #ffffff;
+  color: #1f1d2a;
+  padding: 10px 58.5px;
 }
 
 /*Контейнер с анимацией*/

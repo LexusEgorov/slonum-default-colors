@@ -60,11 +60,50 @@ h2
   border: none
   border-radius: 15px
   background: $green-color
-  padding: 18px 70px
   text-align: center
   font: normal 700 20px/24px 'Rubik', sans-serif
   letter-spacing: 0.04em
   color: $light-color
+
+/*Контейнеры*/
+
+.extra-wide-container
+  width: 1920px
+  margin: 0 auto
+
+.wide-container
+  width: 1680px
+  margin: 0 auto
+
+.small-container
+  width: 1400px
+  margin: 0 auto
+
+/*Шапка*/
+
+.page-header
+  width: 1400px
+  position: absolute
+  top: 30px
+  display: flex
+  justify-content: space-between
+
+  .logo
+    display: flex
+    align-items: center
+
+    &__text
+      font: normal 500 34px/40px 'Rubik', sans-serif
+      color: $main-text-color
+
+      span
+        color: $orange-color
+  
+  .sign-in
+    background: $light-color
+    color: $main-text-color
+    padding: 10px 58.5px
+        
 
 /*Контейнер с анимацией*/
 
