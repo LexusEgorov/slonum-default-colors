@@ -8,9 +8,7 @@ function App() : JSX.Element {
       <PageHeader />
       <main>
         <PromoBlock />
-        <div className="small-container">
-          <About />
-        </div>
+        <About />
       </main>
     </div>
   )

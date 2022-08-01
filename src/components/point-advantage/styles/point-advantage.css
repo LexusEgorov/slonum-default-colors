@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Nunito:wght@400;700;900&family=Rubik:wght@400;500;700&family=Vollkorn:wght@400;500&display=swap");
+.point-advantage {
+  width: 445px;
+  padding: 20px 35px;
+  padding-bottom: 24px;
+  background: #ffffff;
+  border-radius: 16px;
+  text-align: left;
+}
+.point-advantage img {
+  margin-bottom: 8px;
+}
+.point-advantage p {
+  font: normal 400 20px/24px Rubik;
+  letter-spacing: 0.04em;
+  color: #4f5569;
+}/*# sourceMappingURL=point-advantage.css.map */

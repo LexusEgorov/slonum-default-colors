@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Nunito:wght@400;700;900&family=Rubik:wght@400;500;700&family=Vollkorn:wght@400;500&display=swap");
+.timer {
+  display: flex;
+  align-items: flex-start;
+}
+.timer .colon {
+  font: normal 900 24px/33px Nunito;
+  margin-right: 10px;
+  margin-top: 13px;
+  -webkit-animation: colonAnimate 1.5s ease infinite;
+          animation: colonAnimate 1.5s ease infinite;
+}
+.timer .time {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.timer .time:not(:last-child) {
+  margin-right: 10px;
+}
+.timer .time__count {
+  background: #ffffff;
+  font: normal 700 32px/38px Rubik;
+  color: #ff652f;
+  border-radius: 16px;
+  padding: 11px;
+  width: 70px;
+  margin-bottom: 4px;
+}
+.timer .time__text {
+  font: normal 400 16px/22px Nunito;
+}
+.timer .time__where {
+  font: normal 400 16px/22px Nunito;
+  color: #9fa0a7;
+}/*# sourceMappingURL=timer.css.map */

@@ -15,84 +15,45 @@ body {
   background: #f5f5f5;
 }
 
-/*Цвета*/
-/*Стили для текста*/
+/*Стили для заголовков*/
 h1 {
-  font: normal 700 55px/67px "Nunito", sans-serif;
+  font: normal 700 55px/67px Nunito;
   color: #1f1d2a;
 }
 
 h2 {
-  font: normal 700 32px/44px "Nunito", sans-serif;
-  letter-spacing: 0.04em;
+  font: normal 700 32px/44px Nunito;
   color: #1f1d2a;
 }
 
-.signature {
-  font: normal 400 15px/25px "Rubik", sans-serif;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: #9fa0a7;
-}
-
-.paragraph {
-  font: normal 400 22px/33px "Rubik", sans-serif;
-  letter-spacing: 0.05em;
-  color: #1f1d2a;
-}
-
-.secondary-paragraph {
-  font: normal 400 18px/27px "Rubik", sans-serif;
-  letter-spacing: 0.05em;
-  color: #4f5569;
-}
-
-.navigate-text {
-  font: normal 700 20px/27px "Nunito", sans-serif;
-  letter-spacing: 0.03em;
-  color: #1f1d2a;
-}
-
-.timer-text-count {
-  font: normal 700 32px/38px "Nunito", sans-serif;
-  letter-spacing: 0.04em;
-  color: #ff652f;
-}
-
-.timer-text {
-  font: normal 400 16px/22px "Nunito", sans-serif;
-  letter-spacing: 0.04em;
-  color: #1f1d2a;
-}
-
-/*Кнопки*/
-.btn {
-  cursor: pointer;
-  border: none;
-  border-radius: 15px;
-  background: #14a76c;
-  text-align: center;
-  font: normal 700 20px/24px "Rubik", sans-serif;
-  letter-spacing: 0.04em;
+h3 {
+  font: normal 700 20px/28px Nunito;
   color: #ffffff;
 }
 
-/*Поинт*/  
-.point {
-  width: 445px;
-  padding: 20px 35px;
-  padding-bottom: 24px;
-  background: #ffffff;
-  border-radius: 16px;
-  text-align: left;
+/*Кнопки*/  
+button {
+  cursor: pointer;
+  text-align: center;
+  border-radius: 15px;
 }
-.point img {
-  margin-bottom: 8px;
+
+.btn-1 {
+  border: none;
+  font: normal 700 20px/24px Rubik;
+  background: #14a76c;
+  color: #ffffff;
+  padding: 18px 0;
+  box-shadow: 0px 15px 30px rgba(25, 218, 140, 0.25);
 }
-.point p {
-  font: normal 400 20px/24px "Rubik", sans-serif;
+
+.btn-2 {
+  border: 1px solid #1f1d2a;
+  font: normal 400 20px/24px Rubik;
   letter-spacing: 0.04em;
-  color: #4f5569;
+  background: #14a76c;
+  color: #ffffff;
+  padding: 18px 0;
 }
 
 /*Контейнеры*/
@@ -126,7 +87,7 @@ h2 {
   align-items: center;
 }
 .page-header .logo__text {
-  font: normal 500 34px/40px "Rubik", sans-serif;
+  font: normal 500 34px/40px Rubik;
   color: #1f1d2a;
 }
 .page-header .logo__text span {
@@ -136,34 +97,10 @@ h2 {
   background: #ffffff;
   color: #1f1d2a;
   padding: 10px 58.5px;
-  font-weight: 400;
   -webkit-animation: loadPageAnimate 2.5s ease;
           animation: loadPageAnimate 2.5s ease;
 }
 
-@-webkit-keyframes loadPageAnimate {
-  0% {
-    background: #ff652f;
-  }
-  25% {
-    background: #ff652f;
-  }
-  100% {
-    background: #ffffff;
-  }
-}
-
-@keyframes loadPageAnimate {
-  0% {
-    background: #ff652f;
-  }
-  25% {
-    background: #ff652f;
-  }
-  100% {
-    background: #ffffff;
-  }
-}
 /*Промо блок*/
 .promo-block {
   float: right;
@@ -178,12 +115,16 @@ h2 {
 }
 .promo-block .info-column .signature {
   order: -1;
+  font: normal 400 15px/25px Rubik;
+  color: #9fa0a7;
 }
 .promo-block .info-column h1 {
   margin-bottom: 40px;
 }
-.promo-block .info-column .secondary-paragraph {
+.promo-block .info-column .description {
   margin-bottom: 60px;
+  font: normal 400 18px/27px Rubik;
+  color: #4f5569;
 }
 .promo-block .info-column .time-to-go {
   margin-bottom: 60px;
@@ -193,37 +134,6 @@ h2 {
 .promo-block .info-column .time-to-go .get-in {
   padding: 18px 74.5px;
   margin-right: 60px;
-}
-
-/*Таймер*/
-.timer {
-  display: flex;
-  align-items: flex-start;
-}
-.timer .colon {
-  font: normal 900 24px/33px "Nunito", sans-serif;
-  margin-right: 10px;
-  margin-top: 13px;
-  -webkit-animation: colonAnimate 1.5s ease infinite;
-          animation: colonAnimate 1.5s ease infinite;
-}
-.timer .time {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-.timer .time:not(:last-child) {
-  margin-right: 10px;
-}
-.timer .time__count {
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 11px;
-  width: 70px;
-  margin-bottom: 4px;
-}
-.timer .time__where {
-  color: #9fa0a7;
 }
 
 /*Контейнер с анимацией*/
@@ -415,10 +325,10 @@ h2 {
   align-items: center;
   padding-top: 200px;
   clear: both;
-  width: 100%;
 }
 .about__us {
   margin-bottom: 200px;
+  font: normal 400 22px/33px Rubik;
 }
 .about__us .company {
   font-weight: 700;
@@ -426,6 +336,10 @@ h2 {
 .about__us .accent {
   color: #14a76c;
   font-weight: 700;
+}
+.about .for-what {
+  width: 100%;
+  background: url(../../public/images/backgrounds/waves.svg);
 }
 .about .for-what h2 {
   margin-bottom: 60px;
@@ -446,6 +360,28 @@ h2 {
 }
 
 /*Анимации*/ 
+@-webkit-keyframes loadPageAnimate {
+  0% {
+    background: #ff652f;
+  }
+  25% {
+    background: #ff652f;
+  }
+  100% {
+    background: #ffffff;
+  }
+} 
+@keyframes loadPageAnimate {
+  0% {
+    background: #ff652f;
+  }
+  25% {
+    background: #ff652f;
+  }
+  100% {
+    background: #ffffff;
+  }
+}
 @-webkit-keyframes colonAnimate {
   0% {
     opacity: 0;
@@ -456,7 +392,7 @@ h2 {
   100% {
     opacity: 1;
   }
-} 
+}
 @keyframes colonAnimate {
   0% {
     opacity: 0;

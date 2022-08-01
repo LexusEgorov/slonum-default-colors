@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Nunito:wght@400;700;900&family=Rubik:wght@400;500;700&family=Vollkorn:wght@400;500&display=swap')
+@import 'colors'
+@import 'fonts'
 
 /*Минимальное обнуление*/
 
@@ -14,94 +15,43 @@ body
   overflow-x: hidden
   background: #f5f5f5
 
-/*Цвета*/
-
-$light-color: #ffffff
-$green-color: #14a76c
-$orange-color: #ff652f
-$red-color: #e02d05
-$violet-color-dark: #6539c1
-$violet-color-light: #5d77ff
-$main-text-color: #1f1d2a
-$additional-text-color-1: #4f5569
-$additional-text-color-2: #9fa0a7
-$accent-color-1: $green-color
-$accent-color-2: $orange-color
-$accent-color-3-dark: $violet-color-dark
-$accent-color-3-light: $violet-color-light
-$violet-color-gradient: linear-gradient(326.12deg, $accent-color-3-light 17.95%, $accent-color-3-dark 89.78%)
-
-/*Стили для текста*/
-
+/*Стили для заголовков*/
 h1
-  font: normal 700 55px/67px 'Nunito', sans-serif
+  font: $header-1
   color: $main-text-color
 
 h2
-  font: normal 700 32px/44px 'Nunito', sans-serif
-  letter-spacing: 0.04em
+  font: $header-2
   color: $main-text-color
 
-.signature
-  font: normal 400 15px/25px 'Rubik', sans-serif
-  letter-spacing: 0.08em
-  text-transform: uppercase
-  color: $additional-text-color-2
-
-.paragraph
-  font: normal 400 22px/33px 'Rubik', sans-serif
-  letter-spacing: 0.05em
-  color: $main-text-color
-
-.secondary-paragraph
-  font: normal 400 18px/27px 'Rubik', sans-serif
-  letter-spacing: 0.05em
-  color: $additional-text-color-1
-
-.navigate-text
-  font: normal 700 20px/27px 'Nunito', sans-serif
-  letter-spacing: 0.03em
-  color: $main-text-color
-
-.timer-text-count
-  font: normal 700 32px/38px 'Nunito', sans-serif
-  letter-spacing: 0.04em
-  color: $accent-color-2
-
-.timer-text
-  font: normal 400 16px/22px 'Nunito', sans-serif
-  letter-spacing: 0.04em
-  color: $main-text-color
-
-/*Кнопки*/
-
-.btn
-  cursor: pointer
-  border: none
-  border-radius: 15px
-  background: $green-color
-  text-align: center
-  font: normal 700 20px/24px 'Rubik', sans-serif
-  letter-spacing: 0.04em
+h3
+  font: $header-3
   color: $light-color
 
-/*Поинт*/  
+/*Кнопки*/  
 
-.point
-  width: 445px
-  padding: 20px 35px
-  padding-bottom: 24px
-  background: $light-color
-  border-radius: 16px
-  text-align: left
+button
+  cursor: pointer
+  text-align: center
+  border-radius: 15px
 
-  img
-    margin-bottom: 8px
+.btn-1
+  $btn-color: $accent-color-1
+  $shadow-color: change-color($btn-color, $red: min(red($btn-color) + 5, 255), $green: min(green($btn-color) + 51, 255), $blue: min(blue($btn-color) + 32, 255), $alpha: 0.25)
+  border: none
+  font: $btn-1
+  background: $btn-color
+  color: $light-color
+  padding: 18px 0
+  box-shadow: 0px 15px 30px $shadow-color
 
-  p
-    font: normal 400 20px/24px 'Rubik', sans-serif
-    letter-spacing: 0.04em
-    color: $additional-text-color-1
+.btn-2
+  border: 1px solid $main-text-color
+  font: $btn-2
+  letter-spacing: 0.04em
+  background: $accent-color-1
+  color: $light-color
+  padding: 18px 0
 
 /*Контейнеры*/
 
@@ -133,7 +83,7 @@ h2
     align-items: center
 
     &__text
-      font: normal 500 34px/40px 'Rubik', sans-serif
+      font: normal 500 34px/40px $text-font
       color: $main-text-color
 
       span
@@ -143,19 +93,7 @@ h2
     background: $light-color
     color: $main-text-color
     padding: 10px 58.5px
-    font-weight: 400
-    animation: loadPageAnimate 2.5s ease 
-
-@keyframes loadPageAnimate
-  0%
-    background: $orange-color
-
-  25%
-    background: $orange-color
-
-  100%
-    background: $light-color
-    
+    animation: loadPageAnimate 2.5s ease     
         
 /*Промо блок*/
 
@@ -172,12 +110,16 @@ h2
 
     .signature
       order: -1
+      font: $paragraph-4
+      color: $additional-text-color-2
 
     h1
       margin-bottom: 40px
     
-    .secondary-paragraph
+    .description
       margin-bottom: 60px
+      font: $paragraph-3
+      color: $additional-text-color-1
     
     .time-to-go
       margin-bottom: 60px
@@ -187,36 +129,6 @@ h2
       .get-in
         padding: 18px 74.5px
         margin-right: 60px
-  
-/*Таймер*/
-
-.timer
-  display: flex
-  align-items: flex-start
-
-  .colon
-    font: normal 900 24px/33px 'Nunito', sans-serif
-    margin-right: 10px
-    margin-top: 13px
-    animation: colonAnimate 1.5s ease infinite
-
-  .time
-    display: flex
-    flex-direction: column
-    text-align: center
-    
-    &:not(:last-child)
-      margin-right: 10px
-
-    &__count
-      background: $light-color
-      border-radius: 16px 
-      padding: 11px
-      width: 70px
-      margin-bottom: 4px
-    
-    &__where
-      color: $additional-text-color-2
 
 /*Контейнер с анимацией*/
 
@@ -229,7 +141,7 @@ h2
     position: relative
     width: 100%
     height: 693px
-    background: $violet-color-gradient
+    background: $space-color-gradient
   
     &__element
       position: absolute
@@ -385,10 +297,10 @@ h2
   align-items: center
   padding-top: 200px
   clear: both
-  width: 100%
 
   &__us
     margin-bottom: 200px
+    font: $paragraph-1
 
     .company
       font-weight: 700
@@ -398,6 +310,9 @@ h2
       font-weight: 700
 
   .for-what
+    width: 100%
+    background: url(../../public/images/backgrounds/waves.svg)
+
     h2
       margin-bottom: 60px
       
@@ -416,6 +331,16 @@ h2
         color: $accent-color-2
 
 /*Анимации*/ 
+
+@keyframes loadPageAnimate
+  0%
+    background: $orange-color
+
+  25%
+    background: $orange-color
+
+  100%
+    background: $light-color
 
 @keyframes colonAnimate
   0%

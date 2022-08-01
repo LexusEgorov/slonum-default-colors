@@ -1,4 +1,5 @@
 import Time from "./time";
+import './styles/timer.css';
 
 function Timer() : JSX.Element {
   return (

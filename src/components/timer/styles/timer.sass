@@ -1,0 +1,38 @@
+@import '../../../styles/colors'
+@import '../../../styles/fonts'
+
+$timer-text: normal 400 16px/22px $headers-font
+
+.timer
+  display: flex
+  align-items: flex-start
+
+  .colon
+    font: normal 900 24px/33px $headers-font
+    margin-right: 10px
+    margin-top: 13px
+    animation: colonAnimate 1.5s ease infinite
+
+  .time
+    display: flex
+    flex-direction: column
+    text-align: center
+    
+    &:not(:last-child)
+      margin-right: 10px
+
+    &__count
+      background: $light-color
+      font: normal 700 32px/38px $text-font
+      color: $accent-color-2
+      border-radius: 16px 
+      padding: 11px
+      width: 70px
+      margin-bottom: 4px
+    
+    &__text
+      font: $timer-text
+
+    &__where
+      font: $timer-text
+      color: $additional-text-color-2

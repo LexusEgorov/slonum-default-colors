@@ -6,7 +6,7 @@ function PageHeader() : JSX.Element {
           <img className="logo__image" src="images/logo.svg" alt="" width={50} height={50}/>
           <p className="logo__text">Слон<span>УМ</span></p>
         </div>
-        <button className="sign-in btn">Войти</button>
+        <button className="sign-in btn-2">Войти</button>
       </header>
     </div>
   );
