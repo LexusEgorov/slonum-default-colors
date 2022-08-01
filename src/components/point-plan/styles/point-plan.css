@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Nunito:wght@400;700;900&family=Rubik:wght@400;500;700&family=Vollkorn:wght@400;500&display=swap");
+.point-plan {
+  display: flex;
+  align-items: flex-start;
+}
+.point-plan .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ff652f;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  font: normal 700 40px/60px Rubik;
+  margin-right: 40px;
+}
+.point-plan__text {
+  max-height: 48px;
+  max-width: 268px;
+  font: normal 400 20px/24px Rubik;
+  color: #4f5569;
+}
+.point-plan__text a {
+  color: #14a76c;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.point-plan__text a:visited {
+  color: #14a76c;
+}/*# sourceMappingURL=point-plan.css.map */

@@ -1,0 +1,32 @@
+@import '../../../styles/fonts'
+@import '../../../styles/colors'
+
+.point-plan
+  display: flex
+  align-items: flex-start
+
+  .circle
+    display: flex
+    align-items: center
+    justify-content: center
+    background: $accent-color-2
+    color: $light-color
+    border-radius: 50%
+    width: 80px
+    height: 80px
+    font: normal 700 40px/60px $text-font
+    margin-right: 40px
+
+  &__text
+    max-height: 48px
+    max-width: 268px
+    font: $paragraph-2
+    color: $additional-text-color-1
+
+    a
+      color: $accent-color-1
+      text-decoration: underline
+      text-underline-offset: 3px
+
+      &:visited
+        color: $accent-color-1

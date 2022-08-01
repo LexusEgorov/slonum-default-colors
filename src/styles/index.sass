@@ -12,10 +12,10 @@
 
 html,
 body
-  overflow-x: hidden
   background: #f5f5f5
 
 /*Стили для заголовков*/
+
 h1
   font: $header-1
   color: $main-text-color
@@ -56,7 +56,7 @@ button
 /*Контейнеры*/
 
 .extra-wide-container
-  width: 1920px
+  width: 1900px
   margin: 0 auto
 
 .wide-container
@@ -66,6 +66,21 @@ button
 .small-container
   width: 1400px
   margin: 0 auto
+
+/*Декорации текста*/
+
+.underline-wavy
+  text-decoration-color: $accent-color-2  
+  text-decoration-line: underline
+  text-decoration-style: wavy
+  text-decoration-thickness: 2px
+  text-underline-offset: 8px
+
+.underline
+  text-decoration-color: $accent-color-2  
+  text-decoration-line: underline
+  text-decoration-style: solid
+  text-underline-offset: 2.3px
 
 /*Шапка*/
 
@@ -297,6 +312,7 @@ button
   align-items: center
   padding-top: 200px
   clear: both
+  margin-bottom: 160px
 
   &__us
     margin-bottom: 200px
@@ -324,13 +340,167 @@ button
       align-content: space-between
 
       &__item .vk-link
-        text-decoration: underline
         color: $accent-color-2
       
       &__item .vk-link::visited
         color: $accent-color-2
 
+/*Пошаговый план*/
+
+.plan
+  width: 100%
+  padding-bottom: 240px
+  background: url('../../public/images/backgrounds/sky.svg') no-repeat
+  .small-container
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    h2
+      margin-bottom: 87px
+
+    .underline-wavy
+      text-underline-offset: 5px
+
+  &__items
+    $animate-duration: 3s
+    width: 100%
+    display: flex
+    flex-direction: column
+    padding-left: 20px
+    background: url('../../public/images/backgrounds/plan-trajectory.svg') no-repeat 90px 45px
+    position: relative
+
+    img
+      position: absolute
+      top: -77px
+      left: -270px
+      rotate: 0deg
+      animation: planeFlightAnimate $animate-duration linear 
+      opacity: 0
+
+    .point-plan
+      &:nth-child(1)
+        margin-bottom: 123px
+
+        p
+          animation: firstPlanAnimate $animate-duration linear
+
+      &:nth-child(2)
+        margin-bottom: 136px
+        align-self: center
+        margin-right: 150px
+        
+        p
+          animation: secondPlanAnimate $animate-duration linear
+      
+      &:nth-child(3)
+        align-self: flex-end
+        margin-right: 50px
+
+        p
+          animation: thirdPlanAnimate $animate-duration linear
+
 /*Анимации*/ 
+@keyframes firstPlanAnimate
+  0%
+    opacity: 0
+  
+  20%
+    opacity: 0
+
+  40%
+    opacity: 1
+
+  100%
+    opacity: 1
+    
+@keyframes secondPlanAnimate
+  0%
+    opacity: 0
+  
+  50%
+    opacity: 0
+
+  70%
+    opacity: 1
+
+  100%
+    opacity: 1
+
+@keyframes thirdPlanAnimate
+  0%
+    opacity: 0
+  
+  70%
+    opacity: 0
+
+  100%
+    opacity: 1
+
+@keyframes planeFlightAnimate
+  0%
+    top: -77px
+    left: -270px
+    rotate: -5deg
+  
+  10%
+    top: -28px
+    left: -40px
+    rotate: 2deg  
+    opacity: 1  
+  
+  20%
+    top: 21px
+    left: 161px
+    rotate: 20deg    
+
+  30%
+    top: 90px
+    left: 300px
+    rotate: 25deg    
+  
+  40%
+    top: 185px
+    left: 450px
+    rotate: 20deg    
+  
+  50%
+    top: 286px
+    left: 633px
+    rotate: 15deg    
+  
+  60%
+    top: 384px
+    left: 873px
+    rotate: 11deg    
+  
+  65%
+    top: 433px
+    left: 1036px
+    rotate: -6deg   
+  
+  68%
+    top: 437px
+    left: 1118px
+    rotate: -9deg    
+  
+  71%
+    top: 433px
+    left: 1200px
+    rotate: -12deg    
+    opacity: 1 
+  
+  78%
+    top: 380px
+    left: 1500px
+    rotate: -28deg
+    opacity: 0    
+  
+  100%
+    top: 380px
+    left: 1500px
+    rotate: -28deg    
 
 @keyframes loadPageAnimate
   0%

@@ -1,5 +1,6 @@
 import About from "../about/about";
 import PageHeader from "../page-header/page-header";
+import Plan from "../plan/plan";
 import PromoBlock from "../promo-block/promo-block";
 
 function App() : JSX.Element {
@@ -9,6 +10,7 @@ function App() : JSX.Element {
       <main>
         <PromoBlock />
         <About />
+        <Plan />
       </main>
     </div>
   )
