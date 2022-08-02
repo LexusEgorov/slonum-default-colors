@@ -405,36 +405,44 @@ button {
   background: url("../../public/images/backgrounds/plan-trajectory.svg") no-repeat 90px 45px;
   position: relative;
 }
-.plan__items img {
+.plan__items .plane {
   position: absolute;
   top: -77px;
   left: -270px;
   rotate: 0deg;
+  opacity: 0;
+}
+.plan__items .plane-animated {
   -webkit-animation: planeFlightAnimate 3s linear;
           animation: planeFlightAnimate 3s linear;
+}
+.plan__items .point-plan p {
   opacity: 0;
 }
 .plan__items .point-plan:nth-child(1) {
   margin-bottom: 123px;
-}
-.plan__items .point-plan:nth-child(1) p {
-  -webkit-animation: firstPlanAnimate 3s linear;
-          animation: firstPlanAnimate 3s linear;
 }
 .plan__items .point-plan:nth-child(2) {
   margin-bottom: 136px;
   align-self: center;
   margin-right: 150px;
 }
-.plan__items .point-plan:nth-child(2) p {
-  -webkit-animation: secondPlanAnimate 3s linear;
-          animation: secondPlanAnimate 3s linear;
-}
 .plan__items .point-plan:nth-child(3) {
   align-self: flex-end;
   margin-right: 50px;
 }
-.plan__items .point-plan:nth-child(3) p {
+.plan__items .point-plan__animated:nth-child(1) p {
+  opacity: 1;
+  -webkit-animation: firstPlanAnimate 3s linear;
+          animation: firstPlanAnimate 3s linear;
+}
+.plan__items .point-plan__animated:nth-child(2) p {
+  opacity: 1;
+  -webkit-animation: secondPlanAnimate 3s linear;
+          animation: secondPlanAnimate 3s linear;
+}
+.plan__items .point-plan__animated:nth-child(3) p {
+  opacity: 1;
   -webkit-animation: thirdPlanAnimate 3s linear;
           animation: thirdPlanAnimate 3s linear;
 }

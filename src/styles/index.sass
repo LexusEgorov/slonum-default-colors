@@ -371,36 +371,48 @@ button
     background: url('../../public/images/backgrounds/plan-trajectory.svg') no-repeat 90px 45px
     position: relative
 
-    img
+    .plane
       position: absolute
       top: -77px
       left: -270px
       rotate: 0deg
-      animation: planeFlightAnimate $animate-duration linear 
       opacity: 0
 
+    .plane-animated
+      animation: planeFlightAnimate $animate-duration linear 
+
     .point-plan
+      p
+        opacity: 0
+
       &:nth-child(1)
         margin-bottom: 123px
-
-        p
-          animation: firstPlanAnimate $animate-duration linear
 
       &:nth-child(2)
         margin-bottom: 136px
         align-self: center
         margin-right: 150px
-        
-        p
-          animation: secondPlanAnimate $animate-duration linear
-      
+
       &:nth-child(3)
         align-self: flex-end
-        margin-right: 50px
+        margin-right: 50px  
 
-        p
-          animation: thirdPlanAnimate $animate-duration linear
+      &__animated
+        &:nth-child(1)
+          p
+            opacity: 1
+            animation: firstPlanAnimate $animate-duration linear    
 
+        &:nth-child(2)
+          p
+            opacity: 1
+            animation: secondPlanAnimate $animate-duration linear    
+
+        &:nth-child(3)
+          p
+            opacity: 1
+            animation: thirdPlanAnimate $animate-duration linear              
+          
 /*Анимации*/ 
 @keyframes firstPlanAnimate
   0%
