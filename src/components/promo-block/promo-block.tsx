@@ -3,7 +3,7 @@ import Timer from "../timer/timer";
 
 function PromoBlock() : JSX.Element {
   return (
-    <div className="promo-block">
+    <section className="promo-block">
       <div className="info-column">
         <h1>Всероссийский конкурс<br/>Детского рисунка</h1>
         <p className="signature">От компании Слонум</p>
@@ -17,7 +17,7 @@ function PromoBlock() : JSX.Element {
         </div>
       </div>
       <Space />
-    </div>
+    </section>
   );
 }
 

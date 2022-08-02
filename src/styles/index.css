@@ -447,6 +447,30 @@ button {
           animation: thirdPlanAnimate 3s linear;
 }
 
+/*Выдаем дипломы всем участникам*/
+.diploms {
+  background: url("../../public/images/backgrounds/waves.svg") no-repeat;
+  margin-bottom: 44px;
+  padding-bottom: 156px;
+}
+.diploms .small-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.diploms .small-container .info-column {
+  text-align: left;
+  margin-right: 60px;
+}
+.diploms .small-container .info-column h2 {
+  margin-bottom: 27px;
+}
+.diploms .small-container .info-column p {
+  width: 500px;
+  font: normal 400 18px/27px Rubik;
+  color: #4f5569;
+}
+
 /*Анимации*/ 
 @-webkit-keyframes firstPlanAnimate {
   0% {

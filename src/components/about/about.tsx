@@ -2,14 +2,14 @@ import Point from "../point-advantage/point-advantage";
 
 function About() : JSX.Element {
   return (
-    <div className="about">
+    <section className="about">
       <p className="about__us">
         Компания <span className="company">СлонУм</span> – проводит конкурс для детей в котором могут<br />
         участвовать ребята <span className="accent">всех возрастов!</span> Номинации в которых можно<br />
         победить, есть возможность проявить себя во всех направлениях<br />
         и даже <span className="accent">без художественных способностей.</span>
       </p>
-      <div className="for-what">
+      <article className="for-what">
         <div className="small-container">
           <h2>Для чего <span className="underline-wavy">нужно</span> участвовать</h2>
           <ul className="points">
@@ -61,8 +61,8 @@ function About() : JSX.Element {
             </li>
           </ul>
         </div>
-      </div>
-    </div>
+      </article>
+    </section>
   );
 }
 

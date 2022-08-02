@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Nunito:wght@400;700;900&family=Rubik:wght@400;500;700&family=Vollkorn:wght@400;500&display=swap");
+.diplom {
+  width: 842px;
+  height: 595px;
+  background: url("../../../../public/images/diplom/diplom.jpg");
+  padding: 96px 170px 78px 170px;
+}
+.diplom .text-column {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.diplom .text-column h3 {
+  font: normal 400 60px/73px Vollkorn;
+  letter-spacing: 0.03em;
+  color: #14a76c;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.diplom .text-column .awards {
+  font: normal 500 20px/28px Vollkorn;
+  letter-spacing: 0.15em;
+  color: #000000;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.diplom .text-column .name {
+  width: 100%;
+  border-bottom: 2px solid #14a76c;
+  font: normal 500 35px/39px Vollkorn;
+  letter-spacing: 0.02em;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.diplom .text-column .place {
+  font: normal 400 30px/42px Vollkorn;
+  letter-spacing: 0.045em;
+  color: #14a76c;
+  margin-bottom: 20px;
+}
+.diplom .text-column .competition {
+  font: normal 400 16px/24px Vollkorn;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 65px;
+}
+.diplom .text-column .date {
+  font: normal 400 16px/22px Vollkorn;
+  letter-spacing: 0.02em;
+  color: rgba(0, 0, 0, 0.6);
+  font-feature-settings: "tnum" on, "lnum" on;
+}/*# sourceMappingURL=diplom.css.map */

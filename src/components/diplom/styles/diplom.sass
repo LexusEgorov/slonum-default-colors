@@ -1,0 +1,55 @@
+@import '../../../styles/colors'
+@import '../../../styles/fonts'
+
+.diplom
+  width: 842px
+  height: 595px
+  background: url('../../../../public/images/diplom/diplom.jpg')
+  padding: 96px 170px 78px 170px
+
+  .text-column
+    width: 500px
+    display: flex
+    flex-direction: column
+    align-items: center
+    text-align: center
+
+    h3
+      font: normal 400 60px/73px $diplom-font
+      letter-spacing: 0.03em
+      color: $accent-color-1
+      margin-bottom: 20px
+      text-transform: uppercase
+    
+    .awards
+      font: normal 500 20px/28px $diplom-font
+      letter-spacing: 0.15em
+      color: #000000
+      margin-bottom: 20px
+      text-transform: uppercase
+
+    .name
+      width: 100%
+      border-bottom: 2px solid $accent-color-1
+      font: normal 500 35px/39px $diplom-font
+      letter-spacing: 0.02em
+      color: #000000
+      margin-bottom: 20px
+    
+    .place
+      font: normal 400 30px/42px $diplom-font
+      letter-spacing: 0.045em
+      color: $accent-color-1
+      margin-bottom: 20px
+    
+    .competition
+      font: normal 400 16px/24px $diplom-font
+      letter-spacing: 0.02em
+      color: rgba(0, 0, 0, 0.6)
+      margin-bottom: 65px
+
+    .date
+      font: normal 400 16px/22px $diplom-font
+      letter-spacing: 0.02em
+      color: rgba(0, 0, 0, 0.6)
+      font-feature-settings: 'tnum' on, 'lnum' on
