@@ -1,0 +1,19 @@
+@import '../../../styles/colors'
+
+.styled-checkbox
+  position: absolute
+  z-index: -100
+  left: -1000%
+  
+  &__label
+    cursor: pointer
+    display: block
+    width: 18.5px
+    height: 18.5px
+    border-radius: 5px
+    border: 2px solid $accent-color-1
+    margin-right: 12px
+    background: #ffffff url('../../../../public/images/checkbox.svg') no-repeat center
+  
+  &:checked + .styled-checkbox__label
+    background-color: $accent-color-1

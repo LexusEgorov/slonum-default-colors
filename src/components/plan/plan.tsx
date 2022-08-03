@@ -35,7 +35,7 @@ function Plan() {
           <PointPlan number={1}><p>Зарегистрируйтесь<br /> на конкурс <a>Здесь</a></p></PointPlan>
           <PointPlan number={2}><p>Выполните все<br />условия конкурса</p></PointPlan>
           <PointPlan number={3}><p>Загрузите рисунок <a>Здесь</a> или в Личном кабинете</p></PointPlan>
-          <img className="plane" src="images/plane.svg" alt=""/>
+          <img className="plane" src="images/planes/plane.svg" alt=""/>
         </article>
       </div>
     </section>

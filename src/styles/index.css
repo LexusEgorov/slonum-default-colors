@@ -23,11 +23,13 @@ h1 {
 h2 {
   font: normal 700 32px/44px Nunito;
   color: #1f1d2a;
+  letter-spacing: 0.04em;
 }
 
 h3 {
   font: normal 700 20px/28px Nunito;
   color: #ffffff;
+  letter-spacing: 0.04em;
 }
 
 /*Кнопки*/  
@@ -50,7 +52,7 @@ button {
   border: 1px solid #1f1d2a;
   font: normal 400 20px/24px Rubik;
   letter-spacing: 0.04em;
-  background: #14a76c;
+  background: #ffffff;
   color: #ffffff;
   padding: 18px 0;
 }
@@ -471,7 +473,271 @@ button {
   color: #4f5569;
 }
 
+/*Регистрация*/  
+.registration {
+  margin-bottom: 200px;
+}
+.registration .small-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.registration .discount {
+  margin-right: 220px;
+  margin-top: 125px;
+}
+.registration .registration-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.registration .registration-form h2 {
+  margin-bottom: 50px;
+}
+.registration .registration-form form {
+  display: flex;
+  flex-direction: column;
+}
+.registration .registration-form form .styled-input {
+  width: 540px;
+}
+.registration .registration-form form .styled-input:last-child {
+  margin-bottom: 50px;
+}
+.registration .registration-form .agreement {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+.registration .registration-form .agreement p {
+  font: normal 400 15px/25px Rubik;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  color: #9fa0a7;
+}
+.registration .registration-form .agreement p .accent {
+  color: #14a76c;
+  font-weight: 700;
+  text-underline-offset: 3px;
+  -webkit-text-decoration-color: #14a76c;
+          text-decoration-color: #14a76c;
+}
+.registration .registration-form .agreement p .accent a,
+.registration .registration-form .agreement p .accent a:checked {
+  color: #14a76c;
+}
+.registration .registration-form__footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.registration .registration-form__footer .btn-1 {
+  border: none;
+  font: normal 700 20px/24px Rubik;
+  background: #e02d05;
+  color: #ffffff;
+  padding: 18px 0;
+  box-shadow: 0px 15px 30px rgba(229, 96, 37, 0.25);
+  padding: 17px 70px;
+  padding-bottom: 19px;
+}
+.registration .registration-form__footer .planes {
+  position: relative;
+  width: 170px;
+  height: 90px;
+}
+.registration .registration-form__footer .plane {
+  position: absolute;
+}
+.registration .registration-form__footer .plane__1 {
+  z-index: 10;
+  top: -12px;
+  right: 90px;
+  rotate: 0deg;
+}
+.registration .registration-form__footer .plane__2 {
+  z-index: 5;
+  top: -12px;
+  right: 90px;
+  rotate: 0deg;
+}
+.registration .registration-form__footer .plane__3 {
+  z-index: 15;
+  opacity: 0;
+}
+.registration .registration-form__footer .registration-planes-animated .plane__1 {
+  top: -12px;
+  right: 137px;
+  rotate: -7deg;
+  -webkit-animation: registrationFirstPlaneAnimate 2s linear;
+          animation: registrationFirstPlaneAnimate 2s linear;
+}
+.registration .registration-form__footer .registration-planes-animated .plane__2 {
+  top: -9px;
+  right: 100px;
+  rotate: 12deg;
+  -webkit-animation: registrationSecondPlaneAnimate 2s linear;
+          animation: registrationSecondPlaneAnimate 2s linear;
+}
+.registration .registration-form__footer .registration-planes-animated .plane__3 {
+  opacity: 1;
+  top: -12px;
+  right: 112px;
+  rotate: 30deg;
+  -webkit-animation: registrationThirdPlaneAnimate 2s linear;
+          animation: registrationThirdPlaneAnimate 2s linear;
+}
+
 /*Анимации*/ 
+@-webkit-keyframes registrationFirstPlaneAnimate {
+  0% {
+    top: -12px;
+    right: 90px;
+    rotate: 0deg;
+  }
+  60% {
+    top: -12px;
+    right: 90px;
+    rotate: 0deg;
+  }
+  100% {
+    top: -12px;
+    right: 137px;
+    rotate: -7deg;
+  }
+} 
+@keyframes registrationFirstPlaneAnimate {
+  0% {
+    top: -12px;
+    right: 90px;
+    rotate: 0deg;
+  }
+  60% {
+    top: -12px;
+    right: 90px;
+    rotate: 0deg;
+  }
+  100% {
+    top: -12px;
+    right: 137px;
+    rotate: -7deg;
+  }
+}
+@-webkit-keyframes registrationSecondPlaneAnimate {
+  0% {
+    top: -12px;
+    right: 90px;
+    rotate: 0deg;
+  }
+  60% {
+    top: -12px;
+    right: 90px;
+    rotate: 0deg;
+  }
+  100% {
+    top: -9px;
+    right: 100px;
+    rotate: 12deg;
+  }
+}
+@keyframes registrationSecondPlaneAnimate {
+  0% {
+    top: -12px;
+    right: 90px;
+    rotate: 0deg;
+  }
+  60% {
+    top: -12px;
+    right: 90px;
+    rotate: 0deg;
+  }
+  100% {
+    top: -9px;
+    right: 100px;
+    rotate: 12deg;
+  }
+}
+@-webkit-keyframes registrationThirdPlaneAnimate {
+  0% {
+    opacity: 0;
+    top: -169px;
+    right: -241px;
+    rotate: -25deg;
+  }
+  10% {
+    opacity: 0.5;
+    top: -109px;
+    right: -153px;
+    rotate: -14deg;
+  }
+  20% {
+    opacity: 1;
+    top: -49px;
+    right: -65px;
+    rotate: -3deg;
+  }
+  40% {
+    top: -15px;
+    right: 23px;
+    rotate: 10deg;
+  }
+  60% {
+    top: -13px;
+    right: 70px;
+    rotate: 20deg;
+  }
+  90% {
+    top: -13px;
+    right: 122px;
+    rotate: 30deg;
+  }
+  100% {
+    top: -12px;
+    right: 112px;
+    rotate: 30deg;
+  }
+}
+@keyframes registrationThirdPlaneAnimate {
+  0% {
+    opacity: 0;
+    top: -169px;
+    right: -241px;
+    rotate: -25deg;
+  }
+  10% {
+    opacity: 0.5;
+    top: -109px;
+    right: -153px;
+    rotate: -14deg;
+  }
+  20% {
+    opacity: 1;
+    top: -49px;
+    right: -65px;
+    rotate: -3deg;
+  }
+  40% {
+    top: -15px;
+    right: 23px;
+    rotate: 10deg;
+  }
+  60% {
+    top: -13px;
+    right: 70px;
+    rotate: 20deg;
+  }
+  90% {
+    top: -13px;
+    right: 122px;
+    rotate: 30deg;
+  }
+  100% {
+    top: -12px;
+    right: 112px;
+    rotate: 30deg;
+  }
+}
 @-webkit-keyframes firstPlanAnimate {
   0% {
     opacity: 0;
@@ -485,7 +751,7 @@ button {
   100% {
     opacity: 1;
   }
-} 
+}
 @keyframes firstPlanAnimate {
   0% {
     opacity: 0;

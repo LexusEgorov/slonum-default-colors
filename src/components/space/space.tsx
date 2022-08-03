@@ -2,7 +2,7 @@ function Space() : JSX.Element {
   return (
     <div className="promo-animate-container">
       <div className="space fade-in">
-        <img src="images/space1.svg" alt="" width={864} height={693}/>
+        <img src="images/space/space.svg" alt="" width={864} height={693}/>
         <img src="images/space-elements/atom.svg" className='atom space__element' alt="" width={50} height={50}/>
         <img src="images/space-elements/elephant.svg" className='elephant space__element' alt="" width={115} height={90}/>
         <img src="images/space-elements/lamp.svg" className='lamp space__element' alt="" width={110} height={110}/>
@@ -28,13 +28,13 @@ function Space() : JSX.Element {
         <img src="images/space-elements/stars/star-10.svg" className='star-10 space__element' alt="" width={17} height={17}/>
       </div>
       <div className="pencil">
-        <img src="images/pencil.svg" alt="" />
+        <img src="images/space/pencil.svg" alt="" />
       </div>
       <div className="child">
-        <img src="images/child.svg" alt="" width={276} height={331}/>
+        <img src="images/space/child.svg" alt="" width={276} height={331}/>
       </div>
       <div className="planes">
-        <img src="images/planes.svg" alt="" width={170} height={90}/>
+        <img src="images/space/planes.svg" alt="" width={170} height={90}/>
       </div>
     </div>
   )
