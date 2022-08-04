@@ -504,28 +504,6 @@ button {
 .registration .registration-form form .styled-input:last-child {
   margin-bottom: 50px;
 }
-.registration .registration-form .agreement {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: 50px;
-}
-.registration .registration-form .agreement p {
-  font: normal 400 15px/25px Rubik;
-  line-height: 18px;
-  letter-spacing: 0.04em;
-  color: #9fa0a7;
-}
-.registration .registration-form .agreement p .accent {
-  color: #14a76c;
-  font-weight: 700;
-  text-underline-offset: 3px;
-  -webkit-text-decoration-color: #14a76c;
-          text-decoration-color: #14a76c;
-}
-.registration .registration-form .agreement p .accent a,
-.registration .registration-form .agreement p .accent a:checked {
-  color: #14a76c;
-}
 .registration .registration-form__footer {
   width: 100%;
   display: flex;
@@ -600,6 +578,53 @@ button {
 }
 .faq .small-container h2 {
   margin-bottom: 50px;
+}
+
+/*Подписка на рассылку*/  
+.subscribe {
+  height: 373px;
+}
+.subscribe .wide-container {
+  background: url("../../public/images/backgrounds/subscribe.png") no-repeat;
+  padding-top: 30px;
+  padding-bottom: 67px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.subscribe .wide-container h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+.subscribe .wide-container p {
+  margin-bottom: 40px;
+  font: normal 400 18px/27px Rubik;
+  letter-spacing: 0.05em;
+}
+.subscribe .wide-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+.subscribe .wide-container form .form-input {
+  margin-bottom: 20px;
+}
+.subscribe .wide-container form .form-input .styled-input {
+  width: 540px;
+  margin-right: 30px;
+}
+.subscribe .wide-container form .form-input .btn-1 {
+  box-shadow: none;
+  padding: 18px 122px;
+}
+.subscribe .wide-container form .agreement {
+  margin: 0;
+}
+.subscribe .wide-container form .agreement p {
+  margin: 0;
 }
 
 /*Анимации*/ 

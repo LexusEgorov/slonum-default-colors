@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
+import Agreement from "../agreement/agreement";
 import Discount from "../discount/discount";
-import StyledCheckbox from "../styled-checkbox/styled-checkbox";
 import StyledInput from "../styled-input/styled-input";
 
 const DELAY = 1000;
@@ -41,13 +41,7 @@ function Registration() : JSX.Element {
             <StyledInput placeholder="Email" type="text" id={4}/>
             <StyledInput placeholder="Пароль" type="password" id={5}/>
           </form>
-          <div className="agreement">
-            <StyledCheckbox id={1}/>
-            <p>
-              Отправляя данные я соглашаюсь с <a href="" className="accent underline">Условиями конкурса</a><br />
-              и <a href="" className="accent underline">Политикой обработки данных</a>
-            </p>
-          </div>
+          <Agreement />
           <footer className="registration-form__footer" ref={planesRef}>
             <button className="btn-1">Участвовать</button>
             <div className="planes">

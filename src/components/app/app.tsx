@@ -6,6 +6,7 @@ import PageHeader from "../page-header/page-header";
 import Plan from "../plan/plan";
 import PromoBlock from "../promo-block/promo-block";
 import Registration from "../registration/registration";
+import Subscribe from "../subscribe/subscribe";
 
 function App() : JSX.Element {
   return (
@@ -18,6 +19,7 @@ function App() : JSX.Element {
         <Diploms />
         <Registration />
         <Faq questions={FAQ}/>
+        <Subscribe />
       </main>
     </div>
   )

@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Nunito:wght@400;700;900&family=Rubik:wght@400;500;700&family=Vollkorn:wght@400;500&display=swap");
+.agreement {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 50px;
+}
+.agreement p {
+  font: normal 400 15px/25px Rubik;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  color: #9fa0a7;
+}
+.agreement .accent {
+  color: #14a76c;
+  font-weight: 700;
+  text-underline-offset: 3px;
+  -webkit-text-decoration-color: #14a76c;
+          text-decoration-color: #14a76c;
+}
+.agreement .accent a,
+.agreement .accent a:checked {
+  color: #14a76c;
+}/*# sourceMappingURL=agreement.css.map */
