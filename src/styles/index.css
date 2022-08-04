@@ -589,6 +589,19 @@ button {
           animation: registrationThirdPlaneAnimate 2s linear;
 }
 
+/*Вопрос/Ответ*/
+.faq {
+  margin-bottom: 200px;
+}
+.faq .small-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.faq .small-container h2 {
+  margin-bottom: 50px;
+}
+
 /*Анимации*/ 
 @-webkit-keyframes registrationFirstPlaneAnimate {
   0% {

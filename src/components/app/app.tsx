@@ -1,5 +1,7 @@
+import { FAQ } from "../../const/const";
 import About from "../about/about";
 import Diploms from "../diploms/diploms";
+import Faq from "../faq/faq";
 import PageHeader from "../page-header/page-header";
 import Plan from "../plan/plan";
 import PromoBlock from "../promo-block/promo-block";
@@ -15,6 +17,7 @@ function App() : JSX.Element {
         <Plan />
         <Diploms />
         <Registration />
+        <Faq questions={FAQ}/>
       </main>
     </div>
   )

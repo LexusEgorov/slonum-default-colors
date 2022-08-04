@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Nunito:wght@400;700;900&family=Rubik:wght@400;500;700&family=Vollkorn:wght@400;500&display=swap");
+.question {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-top: 1px solid #1f1d2a;
+}
+.question:last-child {
+  border-bottom: 1px solid #1f1d2a;
+}
+.question p {
+  font: normal 400 20px/24px Rubik;
+  letter-spacing: 0.04em;
+  color: #4f5569;
+}
+.question__ask {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 31px 0;
+}
+.question__ask .toggler {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  background: #ff652f;
+  cursor: pointer;
+  font-size: 30px;
+  color: #ffffff;
+  padding-bottom: 4px;
+}/*# sourceMappingURL=question.css.map */
