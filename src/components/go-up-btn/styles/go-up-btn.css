@@ -1,0 +1,13 @@
+.go-up-btn {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ff652f;
+  color: #ffffff;
+  position: fixed;
+  bottom: 94px;
+  right: 263px;
+  width: 56px;
+  height: 56px;
+}/*# sourceMappingURL=go-up-btn.css.map */

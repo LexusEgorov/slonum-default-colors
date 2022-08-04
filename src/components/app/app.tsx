@@ -2,6 +2,7 @@ import { FAQ } from "../../const/const";
 import About from "../about/about";
 import Diploms from "../diploms/diploms";
 import Faq from "../faq/faq";
+import GoUp from "../go-up-btn/go-up-btn";
 import PageFooter from "../page-footer/page-footer";
 import PageHeader from "../page-header/page-header";
 import Plan from "../plan/plan";
@@ -22,6 +23,7 @@ function App() : JSX.Element {
         <Faq questions={FAQ}/>
         <Subscribe />
         <PageFooter />
+        <GoUp />
       </main>
     </div>
   )
