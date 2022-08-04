@@ -13,7 +13,7 @@ function Subscribe() : JSX.Element {
           </p>
           <form action="">
             <div className="form-input">
-              <StyledInput type="text" placeholder="Email" id={6} />
+              <StyledInput type="text" placeholder="Email"/>
               <button className="btn-1">Отправить</button>
             </div>
             <Agreement />

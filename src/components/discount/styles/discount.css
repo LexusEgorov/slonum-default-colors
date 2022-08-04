@@ -107,6 +107,6 @@
 .discount__footer .socials {
   display: flex;
 }
-.discount__footer .socials img:not(:last-child) {
+.discount__footer .socials a:not(:last-child) {
   margin-right: 18px;
 }/*# sourceMappingURL=discount.css.map */

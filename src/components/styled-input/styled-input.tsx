@@ -1,12 +1,13 @@
+import { generateId } from '../../utils/util';
 import './styles/styled-input.css';
 
 type StyledInputProps = {
   type: string;
   placeholder: string;
-  id: number;
 }
 
-function StyledInput({type, placeholder, id} : StyledInputProps ) : JSX.Element {
+function StyledInput({type, placeholder} : StyledInputProps ) : JSX.Element {
+  const id = generateId();
   return (
     <input type={type} className='styled-input' name={`styled-input-${id}`} id={`styled-input-${id}`} placeholder={placeholder}/>
   )

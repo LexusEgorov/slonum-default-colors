@@ -22,8 +22,12 @@ function Discount({oldPrice, newPrice} : DiscountProps) : JSX.Element {
       <footer className="discount__footer">
         <h3>Получить скидку:</h3>
         <div className="socials">
-          <img src="images/socs/vk.svg" alt="" width={39} height={39}/>
-          <img src="images/socs/ok.svg" alt="" width={39} height={39}/>
+          <a href="https://vk.com/slonum">
+            <img src="images/socs/vk.svg" alt="" width={39} height={39}/>
+          </a>
+          <a href="">
+            <img src="images/socs/ok.svg" alt="" width={39} height={39}/>
+          </a>
         </div>
       </footer>
     </article>

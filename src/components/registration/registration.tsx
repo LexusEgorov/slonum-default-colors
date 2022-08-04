@@ -35,11 +35,11 @@ function Registration() : JSX.Element {
         <article className="registration-form">
           <h2>Зарегистрируйтесь, чтобы участвовать</h2>
           <form action="">
-            <StyledInput placeholder="ФИО ребёнка" type="text" id={1}/>
-            <StyledInput placeholder="Дата рождения" type="date" id={2}/>
-            <StyledInput placeholder="Город" type="text" id={3}/>
-            <StyledInput placeholder="Email" type="text" id={4}/>
-            <StyledInput placeholder="Пароль" type="password" id={5}/>
+            <StyledInput placeholder="ФИО ребёнка" type="text"/>
+            <StyledInput placeholder="Дата рождения" type="date"/>
+            <StyledInput placeholder="Город" type="text"/>
+            <StyledInput placeholder="Email" type="text"/>
+            <StyledInput placeholder="Пароль" type="password"/>
           </form>
           <Agreement />
           <footer className="registration-form__footer" ref={planesRef}>
