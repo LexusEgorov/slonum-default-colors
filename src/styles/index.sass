@@ -550,7 +550,7 @@ button
 
 .subscribe
   height: 373px
-  
+
   .wide-container
     background: url('../../public/images/backgrounds/subscribe.png') no-repeat
     padding-top: 30px
@@ -593,6 +593,56 @@ button
         p
           margin: 0
     
+/*Подвал*/
+
+.page-footer
+  padding: 70px 0
+  
+  .upper-container
+    display: flex
+    justify-content: flex-start
+    align-items: center
+    margin-bottom: 27px
+
+    .socs
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-right: 200px
+
+      p
+        font: $nav
+        font-weight: 400
+        letter-spacing: 0.03em
+        color: $additional-text-color-1
+        margin-bottom: 10px
+
+      &__list
+        display: flex
+
+        &__item:not(:last-child)
+          margin-right: 20px
+
+    .footer-navigate
+      font: $nav
+      letter-spacing: 0.03em
+
+      a:not(:last-child)
+        margin-right: 40px
+
+      a,
+      a:visited
+        color: $main-text-color
+  
+  .lower-container
+    display: flex
+    justify-content: center
+
+    p
+      font: $paragraph-2
+      color: $additional-text-color-1
+      letter-spacing: 0.04em
+
 
 /*Анимации*/ 
 @keyframes registrationFirstPlaneAnimate

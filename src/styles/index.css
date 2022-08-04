@@ -627,6 +627,56 @@ button {
   margin: 0;
 }
 
+/*Подвал*/
+.page-footer {
+  padding: 70px 0;
+}
+.page-footer .upper-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 27px;
+}
+.page-footer .upper-container .socs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 200px;
+}
+.page-footer .upper-container .socs p {
+  font: normal 700 20px/27px Nunito;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  color: #4f5569;
+  margin-bottom: 10px;
+}
+.page-footer .upper-container .socs__list {
+  display: flex;
+}
+.page-footer .upper-container .socs__list__item:not(:last-child) {
+  margin-right: 20px;
+}
+.page-footer .upper-container .footer-navigate {
+  font: normal 700 20px/27px Nunito;
+  letter-spacing: 0.03em;
+}
+.page-footer .upper-container .footer-navigate a:not(:last-child) {
+  margin-right: 40px;
+}
+.page-footer .upper-container .footer-navigate a,
+.page-footer .upper-container .footer-navigate a:visited {
+  color: #1f1d2a;
+}
+.page-footer .lower-container {
+  display: flex;
+  justify-content: center;
+}
+.page-footer .lower-container p {
+  font: normal 400 20px/24px Rubik;
+  color: #4f5569;
+  letter-spacing: 0.04em;
+}
+
 /*Анимации*/ 
 @-webkit-keyframes registrationFirstPlaneAnimate {
   0% {
